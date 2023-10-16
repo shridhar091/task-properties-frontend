@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+
+.dashboard-container {
+    display: flex;
+    position: relative;
+  }
+  
+  .heading1{
+      display:flex;
+      justify-content:space-between;
+  }
+  
+  .selecttag{
+    display:flex;
+    flex-direction:row-reverse;
+  }
+
+  .image{
+    width:300px;
+    height:150px;
+    border-radius:5px;
+    border:2px solid black;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .listclass{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .list1{
+    font-size:19px;
+    margin:0 0 6px 0;
+    font-weight:770;
+  }
+  
+  .list2{
+    margin:'0 0 8px 0';
+    font-weight:550;
+  }
+
+  .list3{
+    margin:0 0 8 0px
+  }
+
+  .list4{
+    text-decoration:underline;
+  }
+  .fontawesome{
+    display:flex;
+    justify-content:end;
+  }
+
+  .fontawesome2{
+   display:flex;
+   justify-content:space-between;
+  }
+
+  .search-bar {
+    flex: 1;
+    padding: 20px;
+    /* position:fixed; */
+    overflow: scroll;
+  }
+  
+  .properties-list {
+    /* flex: 3; */  
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    width:80%
+    
+  }
+  
+  .property-item {
+    display:flex;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10p  x;
+    /* width: 100%; */
+  }
+
+  .property-item img {
+    width: 50%;
+    height: auto;
+  }
+
+  .property-item ul{
+    width:100%;
+  }
+
+  button {
+    margin:5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+
+   button:active{
+    background-color: grey;
+    color: white;
+   }
+   
+  input {
+    padding: 5px;
+    padding-right: 30%;
+    border-radius: 5px;
+    border-color: black;
+  }
+
+  /* select {
+    display: flex;
+  } */
+   
+   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+   }
+   
+   .header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+   }
+   
+   .header h1 {
+    margin: 0;
+    padding: 0 15px;
+   }
+   
+   .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+   }
+
+   .filters select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+   }
+   
+   .filters button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+   
+   .filters button:hover {
+    background-color: #0056b3;
+   }
+   
+   .properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+   }
+   
+   .property {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+   }
+   
+   .property h2 {
+    margin: 0;
+    padding: 0 15px;
+   }
+   
+   .property p {
+    margin: 0;
+    padding: 0 1
+   }
+
+   select{
+    margin: 15px;
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: #e3e0e0;
+    border-radius: 7px;
+    padding: 6px;
+   }
+  
+@media screen and (max-width:1285px) {
+  input{
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width:1140px) {
+  input{
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width:1100px) {
+  input{
+    padding-right:0%;
+  }
+}
+
+@media (max-width: 985px) {
+  /* Adjust styles for screens up to 768px wide */
+  .dashboard-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  input{
+    padding-right: 100%;
+  }
+  .search-bar,
+  .properties-list {
+      width: 100%; /* Make search bar and properties list full width */
+  }
+
+  .property-item {
+      /* width: calc(50% - 20px); Two items per row with margin */
+  }
+}
+   

@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Checking */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  .dashboard-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  input{
+    padding-right: 20%;
+  }
+  .search-bar,
+  .properties-list {
+      width: 100%; /* Make search bar and properties list full width */
+  }
+
+  .property-item {
+      width: calc(50% - 20px); /* Two items per row with margin */
+  }
+}
+
+
